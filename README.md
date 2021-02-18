@@ -32,7 +32,7 @@ npm i
 
 ## Features
 * The application files and directories are saved in the following structure:
-.
+
 ├── config
 │   ├── connection.js
 │   └── orm.js
