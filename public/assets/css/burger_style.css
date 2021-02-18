@@ -1,0 +1,132 @@
+body {
+    font-family: 'Truculenta', sans-serif;
+    background-image: url("../img/background3.png");
+}
+
+
+.wrapper {
+    /* text-align: center; */
+}
+
+h1 {
+    /* font-family: 'Ceviche One', cursive; */
+    font-family: 'Truculenta', sans-serif;
+    font-size: 72px !important;
+    font-weight:bold !important;
+    color: #EE2530;
+    text-shadow: -4px 1px 0 #000,
+				  1px 1px 0 #000,
+				 1px -2px 0 #000,
+				-1px -1px 0 #000;
+}
+
+h2, h3{
+    color: #0850AB;
+    text-align: center;
+}
+
+h2 {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: #F3E217;
+    border: 15px #EE2530 solid;
+    border-radius: 0;
+    padding:0;
+    margin: 0;
+}
+
+.card {
+    /* background-color:#7888A4; */
+
+    /* border-radius: 5px; */
+
+    border: 3px black solid;
+        border-top-left-radius: 255px 5px;
+        border-top-right-radius: 0px 5px;
+        border-bottom-right-radius: 5px 255px;
+        border-bottom-left-radius: 5px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+    /* color: #BCF0FB; */
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0;
+    opacity: .95;
+
+}
+
+.card-header {
+    padding:0;
+    background-color: #F3E217;
+    border: 15px #EE2530 solid;
+}
+
+.box-border {
+    border: 2px solid black;
+}
+
+.card-body {
+
+    background-color:#000;
+    border-top: 2px black solid;
+}
+
+#order {
+    vertical-align: top;
+    width: 300px;
+
+}
+
+#orders-div {
+    background-color: #ECEBE6;
+    padding: 10px;
+
+}
+
+#form-div {
+    background-color: #ECEBE6;
+    padding-top: 5px;
+    border-bottom:black dashed 1px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-group {
+    padding:5px auto;
+    margin: 0;
+}
+
+#submitBtn {
+    margin: 10px 0 20px 0;
+    height: 100px;
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
+    border:none;
+}
+
+#submitBtn:focus {
+    outline: none;
+}
+
+.change-devoured {
+    background-color: #EE2530;
+    color: #ECEBE6;
+}
+
+footer{
+    padding: 5px 0;
+    text-align: center;
+    margin-top:10px;
+    background-color: black;
+    border-top: 1px solid black;
+    color:#ECEBE6;
+}
+
+footer p{
+    margin:0;
+}

@@ -1,0 +1,47 @@
+<div id ="form-div">
+  <form id="create-form">
+    <h2>New Burger Order:</h2>
+    <div class="form-group">
+
+      <label for="order" >Type in your burger order below and click the burger button to submit!</label><br/>
+      <input type="text" id="order" name="name" ></input>
+
+    </div>
+
+    <input id="submitBtn" src="/assets/img/burger.png" type="image"></input>
+
+  </form>
+</div>
+
+<div style="text-align: center;">
+  <h2>ORDERS: </h2>
+</div>
+
+
+<div class="row">
+
+  <div class="col">
+    <h3>To be devoured: </h3>
+    <ol id= "to-devour-list">
+      {{#each burgers}}
+      {{#unless devoured}}
+      {{> burgers/burger-order devour=true}}
+      {{/unless}}
+      {{/each}}
+    </ol>
+  </div>
+
+  <div class="col">
+    <h3>Have been devoured: </h3>
+    <ol id= "devoured-list" readonly>
+    {{#each burgers}}
+    {{#if devoured}}
+    {{> burgers/burger-devoured devour=false}}
+    {{/if}}
+    {{/each}}
+    </ol>
+  </div>
+
+</div>
+
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        {{!-- Google fonts --}}
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ceviche+One&family=Flavors&family=Truculenta&display=swap" rel="stylesheet">
+
+        {{!-- Bootstrap --}}
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+
+        {{!-- External stylesheet --}}
+        <link rel="stylesheet" type ="text/css" href="/assets/css/burger_style.css"/>
+
+        <title>Eat-da-Burger</title>
+
+        <script src="/assets/js/burgers.js"></script>
+
+	</head>
+
+	<body>
+        <div class="box-border">
+            <div id = "header" class="jumbotron">
+                <div class="box-border">
+                    <h1>Eat-da-Burger!</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="card">
+                <div class="card-body">
+
+                    <div id="orders-div">
+
+                        {{{ body }}}
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <footer class="fixed-bottom">
+            <div class="container">
+                <p class="center-content">Ashley Stith - HW13 Eat-da-Burger - 18 Feb 21</p>
+            </div>
+        </footer>
+	</body>
+
+</html>
