@@ -1,29 +1,20 @@
-# hw12 Eat-da-Burger, 18 FEB 21 
+# hw12 Eat-da-Burger, 18 FEB 21
 
 #### By Ashley Stith
 
 ## Description
-This console application allows users to Create - Read - Update - Delete Employee data.  It uses node, inquirer and mySQL to interface and interact with an employees database.  The database includes tables for the Employees, Departments and Roles.  Each table has a primary id key and foreign keys to assist with talking to one another.  There are several actions that a user can do once the application has been launched:
+This application is a burger logger that uses MySQL, Node, Express, Handlebars and an ORM.  The MVC design pattern is used, as well as, Node and MySQL to query and route data in the app. Express Handlebars is used to generate the HTML.
 
-* 'View All Employees' - view all employees stored in the database
-* 'View All Employees By Department' - view all employees by department
-* 'View All Employees By Manager' - view all employees by manager
-* 'Add Employee' - add an employee to the database
-* 'Remove Employee' - remove an employee from the database
-* 'Remove Department' - remove a department from the database **BONUS**
-* 'Remove Role' - remove a role from the database **BONUS**
-* 'Update Employee Role' - update an employee's role
-* 'Update Employee Manager'- update an employee's manager **BONUS**
-* 'View All Roles' - view all roles
-* 'View Total Budget By Department' - view total budget (sum of salaries) by department **BONUS**
-
+The application allows users to input names of burgers that they would like to eat.  A user submits a burger's name and clicks the *burger* submit button.  The name of the burger is displayed on the left-hand side of the page (under the Orders section: To be devoured).  Each burger input includes a "Devour It!" button.  When clicked, the burger name is deleted from the left-hand side and moved to the right-hand side of the page (under the Orders section: Have been devoured).  Each burger is stored in a database, whether it is devoured or not.
 
 ## Dependencies
-The [Inquirer package](https://www.npmjs.com/package/inquirer) is used to prompt the users in the command prompt.
+The [mySQL database service](https://www.mysql.com/)
 
-In addition, the [mySQL package](https://www.npmjs.com/package/inquirer) is used to connect with the database.
+[Node.js](https://nodejs.org/)
 
-Finally, the [console.table package](https://www.npmjs.com/package/console.table) is used to display the results in a nice table.
+[Epress NPM package](https://www.npmjs.com/package/express)
+
+[Epress Handlebars](https://www.npmjs.com/package/express-handlebars)
 
 The application is invoked by using the following command:
 
@@ -37,21 +28,52 @@ node employeeTrackerCode.js
 ```bash
 npm i
 ```
-## Features
-* The application has an *EmployeeTracker-schema.sql* file that contains the schema.  Note: sample data is also included in the schema to demonstrate the proper use.
+* Create database using the schema.sql file in the db folder.  Insert test entries using the seeds.sql file (optional)
 
-Video demo of the application: *Note: The application may have been slightly updated since recording demo*
-[![Video](./Assets/screenshot.PNG)](https://drive.google.com/file/d/1b9-aPhhIyiap4yodQx7JhXBcmJ2Ksn0K/view)
+## Features
+* The application files and directories are saved in the following structure:
+.
+├── config
+│   ├── connection.js
+│   └── orm.js
+│ 
+├── controllers
+│   └── burgers_controller.js
+│
+├── db
+│   ├── schema.sql
+│   └── seeds.sql
+│
+├── models
+│   └── burger.js
+│ 
+├── node_modules
+│ 
+├── package.json
+│
+├── public
+│   └── assets
+│       ├── css
+│       │   └── burger_style.css
+│       └── img
+│           └── burger.png
+│  
+│
+├── server.js
+│
+└── views
+    ├── index.handlebars
+    └── layouts
+        └── main.handlebars
 
 ## Known Bugs
 Site has no known bugs
 
 ## Technologies Used
 * node.js
-* inquirer
 * mySQL
+* Express
+* Express-Handlebars
 
 ## Contribution Guidelines
-Direct link to repository: https://github.com/stithac/hw11-express-note-taker
-
-
+Direct link to repository: https://github.com/stithac/burger
