@@ -85,6 +85,7 @@ h2 {
     background-color: #ECEBE6;
     padding: 10px;
 
+
 }
 
 #form-div {
@@ -117,11 +118,14 @@ h2 {
     background-color: #EE2530;
     color: #ECEBE6;
 }
+.change-devoured:hover {
+    background-color: #0850AB;
+}
 
 footer{
     padding: 5px 0;
     text-align: center;
-    margin-top:10px;
+    margin-top:20px;
     background-color: black;
     border-top: 1px solid black;
     color:#ECEBE6;
