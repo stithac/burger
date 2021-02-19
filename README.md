@@ -9,7 +9,7 @@ The application allows users to input names of burgers that they would like to e
 
 ## Live Site
 The site has been deployed to Heroku. Click the screenshot to view.
-![Screenshot](./assets/img/screenshot.PNG)
+![Screenshot](/public/assets/img/screenshot.PNG)
 
 ## Dependencies
 [mySQL database service](https://www.mysql.com/)
