@@ -23,7 +23,7 @@ The site has been deployed to Heroku. Click the screenshot to view.
 The application is invoked by using the following command:
 
 ```bash
-node employeeTrackerCode.js
+node server.js
 ```
 
 ## Installation
